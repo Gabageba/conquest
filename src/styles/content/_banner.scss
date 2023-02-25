@@ -1,0 +1,111 @@
+@import "src/styles/default_variables";
+
+.banner {
+  @extend %content-center;
+  height: 768px;
+
+  .banner_center {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 768px;
+    position: relative;
+
+    .banner__main-info {
+      margin-left: 22px;
+
+      .banner__title {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-family: 'Playfair Display', serif;
+          font-weight: 400;
+          font-size: 45px;
+          line-height: 60px;
+          margin-left: 15px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .banner__subtitle {
+        margin-left: 65px;
+        width: 215px;
+
+        h3 {
+          font-family: 'Playfair Display', serif;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 40px;
+        }
+
+        p {
+          opacity: 0.82;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 40px;
+        }
+
+        button {
+          background-color: $light-gray;
+        }
+      }
+    }
+
+    .banner__watch {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      left: 371px;
+      .banner__semicircle {
+        position: absolute;
+        z-index: -1;
+        width: 496px;
+        height: 944px;
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
+        mix-blend-mode: normal;
+        //transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      }
+
+      .banner__main-watch {
+        position: absolute;
+        left: 193px;
+        margin-top: 15px;
+      }
+
+      .banner__watch-info {
+        display: flex;
+        align-items: center;
+        position: absolute;
+
+        img {
+          margin-right: 15px;
+        }
+
+        .banner_info-value {
+          font-family: 'Prata', serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          margin-right: 7px;
+          margin-left: 15px;
+        }
+      }
+
+      .banner__watch-info_price {
+        width: 160px;
+        bottom: 220px;
+        left: 120px;
+      }
+
+      .banner__watch-info_size {
+        width: 200px;
+        top: 250px;
+        left: 600px;
+      }
+    }
+  }
+}
