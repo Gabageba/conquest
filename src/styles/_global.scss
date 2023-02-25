@@ -1,0 +1,13 @@
+@import "default_variables";
+
+body {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  color: $dark-gray;
+}
+
+.container {
+  //@extend %content-center;
+  display: flex;
+  width: 1170px;
+}

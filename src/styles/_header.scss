@@ -1,0 +1,51 @@
+@import "default_variables";
+
+.header {
+  @extend %content-center;
+  height: 85px;
+
+  .header_align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    ul {
+      display: flex;
+      li {
+        color: $light-gray;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 65px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header__icons {
+    display: flex;
+    img {
+      margin-right: 23px;
+    }
+
+    .header__counter-block {
+      position: relative;
+
+      .header__counter {
+        @extend %content-center;
+        position: absolute;
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        background-color: $counter-color;
+        top: -40%;
+        right: 40%;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9px;
+        //right: -40%;
+      }
+    }
+  }
+}
