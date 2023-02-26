@@ -3,8 +3,9 @@
 .banner {
   @extend %content-center;
   height: 768px;
+  background-color: $white;
 
-  .banner_center {
+  .banner_align {
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -13,6 +14,8 @@
 
     .banner__main-info {
       margin-left: 22px;
+      position: relative;
+      z-index: 2;
 
       .banner__title {
         display: flex;
@@ -61,7 +64,7 @@
       left: 371px;
       .banner__semicircle {
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         width: 496px;
         height: 944px;
         background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%);
@@ -73,7 +76,7 @@
       .banner__main-watch {
         position: absolute;
         left: 193px;
-        margin-top: 15px;
+        margin-top: 10px;
       }
 
       .banner__watch-info {

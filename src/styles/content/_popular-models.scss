@@ -1,0 +1,112 @@
+@import "src/styles/default_variables";
+
+.popular-models {
+
+  @extend %content-center;
+  margin-top: 80px;
+  margin-bottom: 86px;
+
+  .popular-models_center {
+    flex-direction: column;
+
+    .popular-models__title {
+      display: flex;
+      justify-content: center;
+
+      h2 {
+
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+      }
+    }
+
+    .popular-models__view-all {
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+
+      span {
+        color: $light-gray;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $block-line-color;
+      }
+    }
+
+    .popular-models__catalog {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+
+      .popular-models__card {
+        padding: 40px 27px;
+        box-sizing: border-box;
+        background-color: $white;
+
+        .popular-models__name {
+          font-family: 'Playfair Display', serif;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          opacity: 0.82;
+          margin-bottom: 10px;
+          margin-left: 12px;
+        }
+
+        .popular-models__price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2px;
+          margin-left: 12px;
+
+          span {
+            font-family: 'Prata', serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            opacity: 0.82;
+            margin-right: 4px;
+            margin-top: 2px;
+          }
+        }
+
+        .popular-models__product-image {
+          @extend %content-center;
+          width: 315px;
+          height: 315px;
+          border-radius: 50%;
+          background: linear-gradient(270deg, #E2D0C4 0.3%, rgba(226, 208, 196, 0) 99.67%);
+          margin-bottom: 20px;
+
+          .popular-models__product-image_border {
+            @extend %content-center;
+            width: 313px;
+            height: 313px;
+            border-radius: 50%;
+            background-color: $white;
+          }
+        }
+
+        .popular-models__more {
+          display: flex;
+          align-items: center;
+          margin-left: 12px;
+          cursor: pointer;
+
+          span {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            line-height: 21px;
+            margin-left: 18px;
+          }
+        }
+      }
+    }
+  }
+}

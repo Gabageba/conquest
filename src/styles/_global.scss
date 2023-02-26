@@ -22,7 +22,12 @@ button {
   width: 1170px;
 }
 
-.line {
+.line-50 {
   border-bottom:1px solid $line-color;
   width: 50px;
+}
+
+.line-30 {
+  border-bottom:1px solid $line-color;
+  width: 30px;
 }

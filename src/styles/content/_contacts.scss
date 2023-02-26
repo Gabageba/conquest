@@ -1,0 +1,63 @@
+@import "src/styles/default_variables";
+
+.contacts {
+  @extend %content-center;
+  margin-top: 81px;
+  margin-bottom: 90px;
+
+  .contacts_align {
+
+    .contacts__photo-block {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-areas:
+      'photo-1 photo-3'
+      'photo-2 photo-3'
+
+    ;
+      //grid-template-rows: repeat(2, 1fr);
+
+      .contacts__photo-1 {
+        grid-area: photo-1;
+      }
+      .contacts__photo-2 {
+        grid-area: photo-2;
+      }
+      .contacts__photo-3 {
+        grid-area: photo-3;
+      }
+
+    }
+
+    .contacts__info {
+      margin-right: 70px;
+
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        line-height: 43px;
+        width: 471px;
+        margin-top: 140px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        width: 376px;
+        font-family: 'Roboto', serif;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 118px;
+      }
+
+      .contacts__social-media {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 18px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

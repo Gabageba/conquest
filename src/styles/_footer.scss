@@ -1,0 +1,54 @@
+@import "default_variables";
+
+.footer {
+  @extend %content-center;
+  background-color: $footer-color;
+  color: #fff;
+
+  .footer_align {
+    padding: 67px 84px;
+    justify-content: space-between;
+    //align-items: center;
+
+    .footer__company-info {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin-bottom: 22px;
+      }
+
+      span {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 14px;
+        opacity: 0.75;
+        margin-left: 3px;
+      }
+    }
+
+    .footer__sub-info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+
+      h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+      }
+
+      span {
+        margin-bottom: 15px;
+        opacity: 0.75;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}
